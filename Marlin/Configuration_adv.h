@@ -725,10 +725,10 @@
 
 #if ENABLED(MESH_BED_LEVELING) || ENABLED(AUTO_BED_LEVELING_UBL)
   // Override the mesh area if the automatic (max) area is too large
-  #define MESH_MIN_X MESH_INSET + (MESH_INSET) + 50
-  #define MESH_MIN_Y MESH_INSET + (MESH_INSET) + 25 // Probe offset, can't go below min stop
-  #define MESH_MAX_X X_BED_SIZE - (MESH_INSET) - 30 // Probe offset, can't go further right
-  #define MESH_MAX_Y Y_BED_SIZE - (MESH_INSET) - 30
+  #define MESH_MIN_X MESH_INSET + 45
+  #define MESH_MIN_Y MESH_INSET + 15 // Probe offset, can't go below min stop
+  #define MESH_MAX_X X_BED_SIZE - 30 // Probe offset, can't go further right
+  #define MESH_MAX_Y Y_BED_SIZE - 30
 #endif
 
 // @section extras
